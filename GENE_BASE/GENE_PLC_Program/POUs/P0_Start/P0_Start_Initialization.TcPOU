@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.7">
+  <POU Name="P0_Start_Initialization" Id="{38462480-6cd7-4fbd-b101-ccb69495903e}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM P0_Start_Initialization
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <LineIds Name="P0_Start_Initialization">
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

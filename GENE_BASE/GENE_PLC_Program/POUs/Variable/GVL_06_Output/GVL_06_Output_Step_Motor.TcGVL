@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.7">
+  <GVL Name="GVL_06_Output_Step_Motor" Id="{9da21f4d-cafa-4f6e-b300-a14a62ecb8e9}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	
+    //暂存区旋转门
+    ZC_Step_Motor_Revolution_Door_Direction           AT %QX4.0 :BOOL;
+    ZC_Step_Motor_Revolution_Door_Switch              AT %QX4.1 :BOOL;
+	//暂存区横移门
+    ZC_Step_Motor_Lateral_Door_Direction              AT %QX4.2 :BOOL;
+	ZC_Step_Motor_Lateral_Door_Switch                 AT %QX4.3 :BOOL;
+	//暂存区升降机构
+	ZC_Step_Motor_Elevator_Mechanism_Direction        AT %QX4.4 :BOOL;	
+    ZC_Step_Motor_Elevator_Mechanism_Switch           AT %QX4.5 :BOOL;
+	//常温区盒子传送电机
+	CW_Step_Motor_Transport_Direction                 AT %QX5.0 :BOOL;
+    CW_Step_Motor_Transport_Switch                    AT %QX5.1 :BOOL;
+	CW_Step_Motor_Transport_Inch                      AT %QX5.2 :BOOL;
+    //常温区门上下步进电机
+    CW_Step_Motor_Door_UpDown_Direction               AT %QX5.3 :BOOL;
+    CW_Step_Motor_Door_UpDown_Switch                  AT %QX5.4 :BOOL;
+	//常温区门前后电机
+	CW_Step_Motor_Door_FB_Direction                   AT %QX5.5 :BOOL;
+	CW_Step_Motor_Door_FB_Switch                      AT %QX5.6 :BOOL;
+	//常温区卡料架电机
+	CW_Step_Motor_Shelf_Escapement_Direction          AT %QX5.7 :BOOL;
+	CW_Step_Motor_Shelf_Escapement_Switch             AT %QX5.8 :BOOL;
+	
+
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.7">
+  <GVL Name="GVL_00_IO" Id="{ecb58d93-2670-4eaa-a8e3-d224a4ea109a}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	//面板急停按钮
+   Panel_EMG_Stop_Button                                 AT %IX4.0 :BOOL;
+   //暂存区旋转门
+   ZC_Step_Motor_Revolution_Door_Open_Sensor             AT %IX4.1 :BOOL;     
+   ZC_Step_Motor_Revolution_Door_Close_Sensor            AT %IX4.2 :BOOL;
+  //暂存区横向门 
+   ZC_Step_Motor_Lateral_Door_Open_Sensor                AT %IX4.3 :BOOL;
+   ZC_Step_Motor_Lateral_Door_Close_Sensor               AT %IX4.4 :BOOL;
+   //暂存区升降机构
+   ZC_Step_Motor_Elevator_Mechanism_Up_Sensor            AT %IX4.5 :BOOL;
+   ZC_Step_Motor_Elevator_Mechanism_Down_Sensor          AT %IX4.6 :BOOL;
+   //常温区传送机构
+   CW_Step_Motor_Transport_In_Sensor                     AT %IX4.7 :BOOL;
+   CW_Step_Motor_Transport_Out_Sensor                    AT %IX4.8 :BOOL;
+   //常温区保温门
+   CW_Step_Motor_Door_Up_Sensor                          AT %IX4.9 :BOOL;
+   CW_Step_Motor_Door_Down_Sensor                        AT %IX4.10 :BOOL;
+   CW_Step_Motor_Door_Forward_Sensor                     AT %IX4.11 :BOOL;
+   CW_Step_Motor_Door_Backward_Sensor                    AT %IX4.12 :BOOL;
+   //常温区机器人升降伺服电机
+   CW_Servo_Motor_Robot_Up_Limit_Sensor                  AT %IX5.0  :BOOL;
+   CW_Servo_Motor_Robot_Down_Limit_Sensor                AT %IX5.1  :BOOL;
+   CW_Servo_Motor_Robot_Home_Sensor                      AT %IX5.2  :BOOL; 
+   
+   //常温区料架前后伺服电机
+   CW_Servo_Motor_Shelf_Y_Forward_Limit_Sensor             AT %IX6.0  :BOOL;
+   CW_Servo_Motor_Shelf_Y_Backward_Limit_Sensor            AT %IX6.1  :BOOL;
+   CW_Servo_Motor_Shelf_Home_Sensor                        AT %IX6.2  :BOOL;
+   //常温区料架上下伺服电机
+   CW_Servo_Motor_Shelf_Z_Up_Limit_Sensor                  AT %IX7.0  :BOOL;
+   CW_Servo_Motor_Shelf_Z_Down_Limit_Sensor                AT %IX7.1  :BOOL;
+   CW_Servo_Motor_Shelf_Z_Home_Sensor                      AT %IX7.2  :BOOL;
+    //常温区料架旋转伺服电机
+   CW_Servo_Motor_Shelf_C_Home_Sensor                      AT %IX7.3  :BOOL;
+   //常温区卡料架步进电机
+   CW_Step_Motor_Shelf_Escapement_Open_Sensor              AT %IX7.4  :BOOL;
+   CW_Step_Motor_Shelf_Escapement_Close_Sensor             AT %IX7.5  :BOOL;
+   //常温区机器人上是否有夹具感应
+   CW_Is_Gripper_On_Robot_Sensor                           AT %IX7.6  :BOOL;
+   //常温区夹爪1是否在夹爪座上
+   CW_Is_Gripper1_On_Seat_Sensor                           AT %IX7.7  :BOOL;
+   //常温区夹爪2是否在夹爪座上
+   CW_Is_Gripper2_On_Seat_Sensor                           AT %IX7.8  :BOOL;
+   //操作区取盒子步进电机
+   CZ_Step_Motor_Box_X_Left_Sensor                         AT %IX7.9  :BOOL;
+   CZ_Step_Motor_Box_X_Right_Sensor                        AT %IX8.0  :BOOL;
+   CZ_Step_Motor_Box_X_Home_Sensor                         AT %IX8.1  :BOOL;
+   //操作区盒子定位步进电机
+   CZ_Step_Motor_Box_Y_Forward_Sensor                      AT %IX8.2  :BOOL;
+   CZ_Step_Motor_Box_Y_Backward_Sensor                     AT %IX8.3  :BOOL;
+   CZ_Step_Motor_Box_Y_Home_Sensor                         AT %IX8.4  :BOOL;
+   
+    
+   
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
